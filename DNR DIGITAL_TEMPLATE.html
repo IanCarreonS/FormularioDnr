@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNR DIGITAL | TEMPLATE </title>
+    <link rel="shortcut icon" href="https://dnrdigital.com.br/wp-content/uploads/2023/06/cropped-FiveIcon-DNR-Digital-600px-1-180x180.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    background-image: linear-gradient(320deg, #4DF5FB, #11184E);;
+}
+.container{
+    width: 90%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+.input-option label,
+input
+{
+    font-weight: 300;
+}
+
+
+/*
+    Header
+*/
+header{
+    padding: 30px 0;
+}
+header .logo{
+    width: 240px;
+    max-width: 100%;
+}
+
+
+/*
+    Section
+*/
+section{
+    padding: 50px 5%;
+    margin-bottom: 50px;
+    border-radius: 10px;
+
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(240, 240, 240, 0.6); /* Cor de fundo translúcida */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0) 70%),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0) 60%),
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.6) 10%, rgba(255, 255, 255, 0) 60%);
+    background-size: 400% 400%;
+    animation: background-animation 20s infinite alternate;
+}
+@keyframes background-animation {
+    0% {
+      background-position: 0 0, 0 0, 0 0;
+    }
+    100% {
+      background-position: 100% 100%, 100% 100%, 100% 100%;
+    }
+  }
+
+form h2{
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 2em;
+    color: #11184E;
+}
+
+.inputbox{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.inputbox span{
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type=text],
+input[type=email]
+{
+    transition: 0.1s;
+    background: unset;
+    margin-top: 5px;
+    padding: 1px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #101647;
+    outline: none;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    display: block;
+    width: 100%;
+}
+input[type=text]:focus,
+input[type=email]:focus
+{
+    border-width: 2px;
+    padding: 0 0 0 10px;
+}
+
+#data-solicitacao {
+    border: none;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1em;
+    background-color: inherit; /* Cor de fundo translúcida */
+    border: 1px solid #aaa; /* Cor da borda */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    /* Gradiente radial para simular profundidade */
+    background-image:
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 70%),
+        radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 60%),
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 60%);
+    background-size: 400% 400%;
+    animation: background-animation 20s infinite alternate;
+}
+
+#data-solicitacao:focus {
+    border-color: var(--color-laranja); /* Cor da borda ao focar */
+    box-shadow: 0 0 8px rgba(82, 113, 255, 0.4); /* Sombra ao focar */
+}
+
+@keyframes background-animation {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+    100% {
+        background-position: 100% 100%, 100% 100%, 100% 100%;
+    }
+}
+
+#submit{
+    transition: 0.3s;
+    width: 220px;
+    max-width: 100%;
+    background-color: #5271FF;
+    color: white;
+    font-weight: 600;
+
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#submit:hover,
+#submit:focus
+{
+    background-color:#11184E;
+}
+    </style>
+</head>
+<body>
+    <main> 
+        <header>
+            <div class="container">
+                <a href="https://dnrdigital.com.br/" target="_blank" rel="noopener noreferrer"><img class="logo" src="https://dnrdigital.com.br/wp-content/uploads/2023/06/DNR-digital-header-1.png" alt="DNR Telecomunicação"></a>
+            </div>
+          
+        </header>
+
+        <div class="container">
+            <section>
+                <form action="https://formsubmit.co/ian.carreon@dnr.com.br" method="POST"> 
+                
+                    <h2>Solicitação de Template</h2>
+
+                    <div class="inputbox">
+                        <label for="name">Informe a carteira:</label>
+                        <input type="text" name="data[nome_da_carteira]" id="name" placeholder="Ex: Movida" required>
+                    </div>
+                   
+                    <div class="inputbox">
+                        <label for="email">Informe seu e-mail:</label>
+                        <input type="email" name="data[email]" id="email" placeholder="Ex: joaodasilva@dnr.com.br" required>
+                    </div>
+                    
+
+                    <div class="inputbox">
+                        <label for="data-solicitacao">Data da solicitação</label>
+                        <input type="date" name="data[data_solicitacao]" id="data-solicitacao" required>
+                    </div>
+                            
+                        <div>
+                        <p>Que tipo de template deve ser?</p>
+                             <br>
+                            <input type="radio" id="abordagem" name="data[tipo_template]" value="Abordagem" required> 
+                            <label for="Abordagem">Abordagem</label>
+                            <br>
+                            <input type="radio" id="preventivo" name="data[tipo_template]" value="preventivo" required> 
+                            <label for="preventivo">Preventivo</label>
+                            <br>
+                            <input type="radio" id="quebra" name="data[tipo_template]" value="quebra" required> 
+                            <label for="quebra">Quebra</label>
+                            <br>
+                            <input type="radio" id="contraproposta" name="data[tipo_template]" value="contraproposta" required> 
+                            <label for="contraproposta">Contra Proposta</label>
+                            <br>
+                            <input type="radio" id="carrinhoabandonado" name="data[tipo_template]" value="carrinhoabandonado" required> 
+                            <label for="carrinhoabandonado">Carrinho Abandonado</label>
+                            <br>
+                            <input type="radio" id="cartoraria" name="data[tipo_template]" value="cartoraria" required> 
+                            <label for="cartoraria">Cartorária</label>
+                            <br>
+                            <br>
+                            <br>
+                   
+                        <p>Podemos usar a logo da carteira ?</p>
+                        
+                        <div class="input-option inline">
+                            <input type="radio" id="Sim" name="data[usar_logo]" value="Sim" required> 
+                            <label for="Sim">Sim</label>
+                        </div>
+                        
+                         
+                        <div class="input-option inline">
+                            <input type="radio" id="Não" name="data[usar_logo]" value="Não" required> 
+                            <label for="Não">Não</label>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    
+                    
+                    <div class="inputbox">
+                        <label>Informe se a carteira possui alguma política específica como por exemplo: "Desconto de até 90%?"</label>
+                        <input type="text" name="data[politica_especifica]" id="específique" required>
+                    </div>
+                    
+                    
+                    <div class="inputbox">
+                        <label> A carteira possui algum tipo de imagem que não pode ser usada ou etc ?</label>
+                        <input type="text" name="data[imagem_proibida]" id="específique" required>
+                    </div>
+                   
+        
+                    <div class="inputbox">
+                        <label> Tem algum modelo de template como referência?</label>
+                        <input type="text" name="data[referencia]" id="específique" required>
+                    </div>
+                   
+        
+                    <div class="inputbox">
+                        <label> Informe o 0800:</label>
+                        <input type="text" name="data[numero_central]" id="específique" required>
+                    </div>
+              
+        
+                    <div class="inputbox">
+                        <label> Informe o número de WhatsApp:</label>
+                        <input type="text" name="data[whatsapp]" id="específique" required>
+                    </div>
+                
+        
+                    <div class="inputbox">
+                        <label> Informe o e-mail de retorno das ações:</label>
+                        <input type="text" name="data[email_retorno]" id="específique" required>
+                    </div>
+           
+        
+                    <div class="inputbox">
+                        <label> Caso seja necessário incluir mais canais de atendimento informe abaixo: </label>
+                        <input type="text" name="data[canais_extras]" id="específique" required>
+                    </div>
+                
+                
+                    <div class="inputbox">
+                        <input type="submit" name="enviar" id="submit" value="Enviar">
+                    </div>
+                    
+                </form>
+            </section>
+        </div>
+      
+    </main>
+</body>
+</html>
